@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class Task {
-    private Long id;
+    private int id;
     private String name;
     private Date date;
     private int priority;
@@ -20,14 +20,14 @@ public class Task {
         this.priority = priority;
     }
 
-    public Task(Long id, String name, Date date, int priority) {
+    public Task(int id, String name, Date date, int priority) {
         this.id = id;
         this.name = name;
         this.date = date;
         this.priority = priority;
     }
 
-    public Task(Long id, String name, Date date, int priority, boolean overdue) {
+    public Task(int id, String name, Date date, int priority, boolean overdue) {
         this.id = id;
         this.name = name;
         this.date = date;
@@ -35,11 +35,11 @@ public class Task {
         this.overdue = overdue;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

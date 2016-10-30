@@ -4,7 +4,7 @@ package ProgForce.domain;
 import java.util.Date;
 
 public class Completed {
-    private Long id;
+    private int id;
     private String name;
     private Date initDate;
     private int priority;
@@ -18,18 +18,18 @@ public class Completed {
         this.priority = priority;
     }
 
-    public Completed(Long id, String name, Date initDate, int priority) {
+    public Completed(int id, String name, Date initDate, int priority) {
         this.id = id;
         this.name = name;
         this.initDate = initDate;
         this.priority = priority;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

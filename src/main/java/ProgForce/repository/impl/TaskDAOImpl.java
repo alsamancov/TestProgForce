@@ -96,7 +96,7 @@ public class TaskDAOImpl implements TaskDAO {
                 String name = resultSet.getString("name");
                 Date date = resultSet.getDate("date");
                 int priority = resultSet.getInt("priority");
-                list.add(new Task((long) id, name, date, priority));
+                list.add(new Task(id, name, date, priority));
 
 
             }

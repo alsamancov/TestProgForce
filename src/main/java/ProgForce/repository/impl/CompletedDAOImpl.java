@@ -65,7 +65,7 @@ public class CompletedDAOImpl implements CompletedDAO {
                 Date date = resultSet.getDate("date");
                 int priority = resultSet.getInt("priority");
 
-                list.add(new Completed((long) id, name, date, priority));
+                list.add(new Completed(id, name, date, priority));
 
 
             }
@@ -84,7 +84,7 @@ public class CompletedDAOImpl implements CompletedDAO {
 
     }
 
-    public Completed findCompletedById(String id) throws SQLException {
+    public Completed findCompletedById(int id) throws SQLException {
         return null;
     }
 }

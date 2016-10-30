@@ -11,5 +11,5 @@ public interface CompletedDAO {
     public void deleteCompleted(Completed completed) throws SQLException;
     public void updateCompleted(Completed completed) throws SQLException;
     public List<Completed> getAllCompleted() throws SQLException;
-    public Completed findCompletedById(String id) throws SQLException;
+    public Completed findCompletedById(int id) throws SQLException;
 }
