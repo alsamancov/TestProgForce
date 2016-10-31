@@ -123,9 +123,9 @@ public class ConsoleMenu {
 
     private void add() throws IOException, SQLException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter name of task:");
+        System.out.println("Enter name of task (no more than 50 characters):");
         String name = reader.readLine();
-        System.out.println("Enter completion date:");
+        System.out.println("Enter completion date if format "yyyy-MM-dd":");
         Date date = null;
         Date formatteddate = null;
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -136,7 +136,7 @@ public class ConsoleMenu {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Enter priority of the task:");
+        System.out.println("Enter priority of the task number between 1 and 4 inclusive:");
         int priority = Integer.parseInt(reader.readLine());
         /**
          * get all init params in proper type
