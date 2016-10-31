@@ -125,7 +125,7 @@ public class ConsoleMenu {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter name of task (no more than 50 characters):");
         String name = reader.readLine();
-        System.out.println("Enter completion date if format "yyyy-MM-dd":");
+        System.out.println("Enter completion date in format "yyyy-MM-dd":");
         Date date = null;
         Date formatteddate = null;
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
